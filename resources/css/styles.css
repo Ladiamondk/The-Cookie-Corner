@@ -182,10 +182,20 @@ nav a:hover {
     width: 100%;
     justify-content: center;
     list-style: none;
-    background-color: RGB(244, 208, 134);
+    background-color: rgba(244, 208, 134, 0.5);
+
     width: 90%;
 }
 #about li {
     display: flex;
     margin: 3%;
+}
+#about img {
+    border-radius: 5%;
+}
+@media screen and (max-width: 1000px) {
+    #about ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
